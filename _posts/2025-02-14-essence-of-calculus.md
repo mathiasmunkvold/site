@@ -72,6 +72,120 @@ $$
 
 Limits, when they exist, are unique. Hence, if \\(\hat{T}\\) is another linear transformation satisfying  \\(\textcolor{red}{(1)} \text{ and }\textcolor{red}{(2)}\\), then \\(T(u)=\hat{T}(u)\\) for all \\(u\\), and \\(T=\hat{T}\\).
 
+\\(\blacksquare\\)
+
+
+The linear operator \\(Df\\) is the total derivative (or in the infinite dimensional context the Frechet derivativec). On another note, recall the \\(ij^{th}\\) partial derivative
+
+$$
+\frac{\partial f_i}{\partial x_j} (p) = \lim_{t \to 0} \frac{f_i(p + t e_j) - f_i(p)}{t}
+$$
+
+This can easily be related to the total derivative.
+
+**Corollary**
+
+If the total derivative exists then the partial derivatives exist and the partial derivatives are the entries of the matrix representing the total derivative operator.
+
+**Proof**
+
+By theorem 1 this
+$$
+Df(p)[u] = \lim_{t \to 0} \frac{f(p+tu) - f(p)}{t},
+$$
+
+holds for any \\(u \in \mathbb{R}^n\\). Now set \\(u=e_j\\).
+
+
+$$
+Df(p)[e_j] = \lim_{t \to 0} \frac{f(p+te_j) - f(p)}{t} =  \lim_{t \to 0} \frac{1}{t}\left( \begin{array}{c} f_1(p+te_j)-f_1(p)  \\ f_2(p+te_j)f_2(p)   \\ \vdots \\ f_m(p+te_j)-f_m(p)   \end{array} \right)
+$$
+
+Note, while we now think of \\(Df(p)\\) as a matrix, \\(Df(p)[e_j]\\) picks out the \\(j^{th}\\) column of the matrix. Choosing the \\(i^{th}\\) row on each side
+
+$$
+
+\left( Df(p)[e_j] \right)_i = \lim_{t \to 0} \frac{f_i(p+te_j) - f_i(p)}{t} = \frac{\partial f_i}{\partial x_j} (p)
+
+$$
+
+Hence,
+
+
+$$
+Df(p)_{ij} = \frac{\partial f_i}{\partial x_j} (p).
+$$
+
+\\(\blacksquare\\)
+
+
+
+
+
+
+
+
+## Diffeomorphisms
+
+$$
+C^k(\mathbb{R}^n, \mathbb{R}^m) = \left\{ f: \mathbb{R}^n \to \mathbb{R}^m \mid \text{for all } f_j: \text{ all partial derivatives up to order (in multiindices) } k \text{ exist and are continuous functions} \right\}
+$$
+
+Same for open sets \( U \subseteq \mathbb{R}^n \), \( V \subseteq \mathbb{R}^m \):  
+$$
+C^k(U, V)
+$$
+
+
+**Example**
+Consider
+
+$$
+f: \mathbb{R}^2 \to \mathbb{R}^2, \quad f(x,y) = \begin{pmatrix} x \\ y^2 \end{pmatrix}
+$$
+
+
+$$
+\mathcal{D}^\alpha f(x,y) = \begin{pmatrix} y \\ 0 \end{pmatrix} \quad \text{for } \alpha = (1,0)
+$$
+$$
+\mathcal{D}^\alpha f(x,y) = \begin{pmatrix} 1 \\ 0 \end{pmatrix} \quad \text{for } \alpha = (1,1)
+$$
+
+Clearly, we always get contiouns functions in the components whatever multiindex we use.\\(\textcolor{red}{(check cont video)}\\)
+
+$$
+\Rightarrow f \in C^\infty(\mathbb{R}^2, \mathbb{R}^2)
+$$
+
+**Definition:**  
+Let \( U, V \subseteq \mathbb{R}^n \) be open sets. A map \( f: U \to V \) is called a \( C^k \)-diffeomorphism if:
+1. \( f \in C^k(U, V) \)
+2. \( f \) is bijective
+3. \( f^{-1} \in C^k(V, U) \)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
