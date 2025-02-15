@@ -31,7 +31,8 @@ $$
 
 **Definition: Total Derivative**
 
-Let $f \colon U\subset \mathbb{R}^m \rightarrow \mathbb{R}^m$. $f$ is differentiable at $p \in U$ if there exists an operator $A \in \mathcal{L}(\mathbb{R}^n,\mathbb{R}^n)$ and a mapping $R\colon \mathbb{R}^n \rightarrow \mathbb{R}^m $
+This is a test of some inline math
+\\(f \colon U\subset \mathbb{R}^m \rightarrow \mathbb{R}^m\\).Let $f \colon U\subset \mathbb{R}^m \rightarrow \mathbb{R}^m$. $f$ is differentiable at $p \in U$ if there exists an operator $A \in \mathcal{L}(\mathbb{R}^n,\mathbb{R}^n)$ and a mapping $R\colon \mathbb{R}^n \rightarrow \mathbb{R}^m $
 such that for all $u \in U$
 
 $$
