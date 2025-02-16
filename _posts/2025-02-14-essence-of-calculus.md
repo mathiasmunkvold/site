@@ -267,7 +267,7 @@ Why does the inverse function theorem make sense? Suppose we have a function \\(
 ![alt text](../images/inv-thm.png)
 
 
-
+~[image]({{site.baseurl}}//images/inv-thm.png)
 
 
 
