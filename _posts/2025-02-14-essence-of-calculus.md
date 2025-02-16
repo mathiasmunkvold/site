@@ -249,27 +249,27 @@ $$
 
 However, it is still not a diffeomorphism since \\(\Phi\\) is not injective. In the image below the blue line represents \\((0,\infty)\\) while the red represents the reals. Clearly the blue line in the \\( (0,\infty) \times \mathbb{R}\\) space is sent the blue line in cartesian space. While vertical lines in  (0,\infty) \times \mathbb{R} are sent to circles. A long vertical line will not give a injective map. Hence, if we keep the sets small enoough we have a local diffeomorphism.
 
-![Editing a markdown file for a talk](/images/polar.png)
+
+![image]({{site.baseurl}}/site/images/polar.png)
 
 
+Write this def down
 
-![alt text](/images/local_diff.png)
 
-
+![image]({{site.baseurl}}/site/images/local_diff.png)
 
 
 Why does the inverse function theorem make sense? Suppose we have a function \\(f\colon U \to V\\). \\(f\\) is a nonlinear function, as seen in the image below how it distorts in a nonlinear way (not using scaling, rotation,shearing). When \\(f\\) is differentiable at \\(p\\), we know we can approximate the function near \\(p\\) as the sum of a constant term, a linear term and a sublinear term (see the defintion of the total derivative). Hence, near the point \\(p\\), "when we zoom in alot", we expect the transformation to behave almost linear in this region.  
 
 
- We have seen that when a function is differentiable near a point 
+![image]({{site.baseurl}}/site/images/inv-thm.png)
 
-
-![alt text](../images/inv-thm.png)
 
 
 ~[image]({{site.baseurl}}/site/images/polar.PNG)
 
 ![image]({{site.baseurl}}/site/images/polar.PNG)
+
 
 
 
