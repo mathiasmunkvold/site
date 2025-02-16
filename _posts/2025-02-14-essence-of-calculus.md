@@ -159,10 +159,122 @@ $$
 $$
 
 **Definition:**  
-Let \( U, V \subseteq \mathbb{R}^n \) be open sets. A map \( f: U \to V \) is called a \( C^k \)-diffeomorphism if:
-1. \( f \in C^k(U, V) \)
-2. \( f \) is bijective
-3. \( f^{-1} \in C^k(V, U) \)
+Let \\( U, V \subseteq \mathbb{R}^n \\) be open sets. A map \\( f: U \to V \\) is called a \\( C^k \\)-diffeomorphism if:
+1. \\( f \in C^k(U, V) \\)
+2. \\( f \\) is bijective
+3. \\( f^{-1} \in C^k(V, U) \\)
+
+
+**Example**
+
+$$
+f(x) = x^2, \quad f: (0, \infty) \to (0, \infty)
+$$
+$$
+\Rightarrow f^{-1}(x) = \sqrt{x}, \quad f^{-1}: (0, \infty) \to (0, \infty)
+$$
+$$
+\Rightarrow C^\infty \text{-diffeomorphism. Since the origin is excluded we get no trobule there.}
+$$
+
+
+**Counterexample**
+
+$$
+f(x) = x^3, \quad f: \mathbb{R} \to \mathbb{R}
+$$
+$$
+\Rightarrow f^{-1}(x) = x^{1/3}, \quad f^{-1}: \mathbb{R} \to \mathbb{R}
+$$
+
+Here wer get an infinite slope at the origin. Not a \\(C^1 \\)diffeomorphism.
+
+
+**Note**
+
+\\(U,V \subseteq \mathbb{R}^n\\) and suppose \\(f \colon U \to V\\) is a \\(C^1 \\) diffeomorphism. Then we have
+
+$$
+f^{-1} \circ f = id_{U} \quad  f\circ f^{-1} = id_{V}
+$$
+
+For the identity map 
+
+$$
+id(x)=x = \left( \begin{array}{c} x_1 \\ x_2 \\ \vdots \\ x_n \end{array} \right)
+$$
+
+it is clear that the matrix representation of the total derivative, i.e. the Jacobian matrix is just the identity matrix. Computing the total at some \\(x\\)derivative on each side above, with the help of the chain rule, we get.
+
+$$
+D(f^{-1}\circ f)(x) = Df^{-1}(f(x))\circ Df(x) = J_{f^{-1}}(f(x))J_{f}(x) = I_{n\times n}
+$$
+
+and
+$$
+D(f\circ f^{-1})(x) = \dots =  J_{f}(x)J_{f^{-1}}(f(x)) = I_{n\times n}
+$$
+
+So \\(J_f(x)\\) is invertible for all \\(x\in U\\). Hence \\( \operatorname{det}J_f(x) \neq 0\\). Importantly, this does not work for dimensions 2 and above.
+
+
+We introduce a weaker notion, local diffeomorpishmm. Examples of local diffeomorphisms will be coordinate transformations. That the diffeomorphism is local just means it does not hold globally, but rather if we restrict it to a smaller set.
+![Editing a markdown file for a talk](/images/local-diffeomorphism.png)
+
+**Example**
+
+Polar coordinate transformation is given by
+
+
+$$
+\Phi\colon (0,\infty) \times \mathbb{R} \to \mathbb{R}^2 -\{0\}, \quad (r,\phi) \mapsto \left( \begin{array}{c} r \operatorname{cos}\phi \\ r\operatorname{sin}\phi \end{array} \right).
+$$
+
+
+$$
+J_{\Phi} =
+\begin{bmatrix}
+\cos\phi & -r\sin\phi \\
+\sin\phi & r\cos\phi
+\end{bmatrix}
+$$
+
+
+Clearly
+
+
+$$
+\operatorname{det}(J_{\Phi}) = r>0.
+$$
+
+However, it is still not a diffeomorphism since \\(\Phi\\) is not injective. In the image below the blue line represents \\((0,\infty)\\) while the red represents the reals. Clearly the blue line in the \\( (0,\infty) \times \mathbb{R}\\) space is sent the blue line in cartesian space. While vertical lines in  (0,\infty) \times \mathbb{R} are sent to circles. A long vertical line will not give a injective map. Hence, if we keep the sets small enoough we have a local diffeomorphism.
+
+![Editing a markdown file for a talk](/images/polar.png)
+
+![alt text](/images/local_diff.png)
+
+
+
+
+Why does the inverse function theorem make sense? Suppose we have a function \\(f\colon U \to V\\). \\(f\\) is a nonlinear function, as seen in the image below how it distorts in a nonlinear way (not using scaling, rotation,shearing). When \\(f\\) is differentiable at \\(p\\), we know we can approximate the function near \\(p\\) as the sum of a constant term, a linear term and a sublinear term (see the defintion of the total derivative). Hence, near the point \\(p\\), "when we zoom in alot", we expect the transformation to behave almost linear in this region.  
+
+
+ We have seen that when a function is differentiable near a point 
+
+
+![alt text](/images/inv-thm.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
