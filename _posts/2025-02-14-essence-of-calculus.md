@@ -249,7 +249,9 @@ $$
 
 However, it is still not a diffeomorphism since \\(\Phi\\) is not injective. In the image below the blue line represents \\((0,\infty)\\) while the red represents the reals. Clearly the blue line in the \\( (0,\infty) \times \mathbb{R}\\) space is sent the blue line in cartesian space. While vertical lines in  (0,\infty) \times \mathbb{R} are sent to circles. A long vertical line will not give a injective map. Hence, if we keep the sets small enoough we have a local diffeomorphism.
 
-![Editing a markdown file for a talk](/images/polar.png)
+![Editing a markdown file for a talk](/assets/test/polar.png)
+
+
 
 ![alt text](/images/local_diff.png)
 
