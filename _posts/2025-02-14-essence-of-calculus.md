@@ -262,7 +262,8 @@ Why does the inverse function theorem make sense? Suppose we have a function \\(
  We have seen that when a function is differentiable near a point 
 
 
-![alt text](/images/inv-thm.png)
+![alt text](../images/inv-thm.png)
+
 
 
 
