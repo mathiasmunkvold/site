@@ -219,7 +219,8 @@ So \\(J_f(x)\\) is invertible for all \\(x\in U\\). Hence \\( \operatorname{det}
 
 
 We introduce a weaker notion, local diffeomorpishmm. Examples of local diffeomorphisms will be coordinate transformations. That the diffeomorphism is local just means it does not hold globally, but rather if we restrict it to a smaller set.
-![Editing a markdown file for a talk](/images/local-diffeomorphism.png)
+
+![image]({{site.baseurl}}/site/images/local-diffeomorphism.png)
 
 **Example**
 
@@ -249,7 +250,6 @@ $$
 
 However, it is still not a diffeomorphism since \\(\Phi\\) is not injective. In the image below the blue line represents \\((0,\infty)\\) while the red represents the reals. Clearly the blue line in the \\( (0,\infty) \times \mathbb{R}\\) space is sent the blue line in cartesian space. While vertical lines in  (0,\infty) \times \mathbb{R} are sent to circles. A long vertical line will not give a injective map. Hence, if we keep the sets small enoough we have a local diffeomorphism.
 
-
 ![image]({{site.baseurl}}/site/images/polar.png)
 
 
@@ -265,10 +265,6 @@ Why does the inverse function theorem make sense? Suppose we have a function \\(
 ![image]({{site.baseurl}}/site/images/inv-thm.png)
 
 
-
-~[image]({{site.baseurl}}/site/images/polar.PNG)
-
-![image]({{site.baseurl}}/site/images/polar.PNG)
 
 
 
