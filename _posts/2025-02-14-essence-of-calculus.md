@@ -269,6 +269,8 @@ Why does the inverse function theorem make sense? Suppose we have a function \\(
 
 ~[image]({{site.baseurl}}/site/images/polar.PNG)
 
+![image]({{site.baseurl}}/site/images/polar.PNG)
+
 
 
 
