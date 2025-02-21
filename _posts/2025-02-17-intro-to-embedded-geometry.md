@@ -40,7 +40,7 @@ $$
 Dh(x) = \left[ \frac{\partial h}{\partial x_1}(x), \frac{\partial h}{\partial x_2}(x) \right] = [2x_1, -2x_2].
 $$
 
-At $ x = 0 $, $ Dh(0) = [0,0] $, whose kernel is all of $ \mathbb{R}^2 $: that does not constitute a reasonable linearization of $ \mathcal{X} $ around the origin.
+At \(x = 0\) $, $ Dh(0) = [0,0] $, whose kernel is all of $ \mathbb{R}^2 $: that does not constitute a reasonable linearization of $ \mathcal{X} $ around the origin.
 
 We can gain further insight into the issue at hand by considering additional examples. The zero-sets of the functions $ h(x) = x_1^2 - x_2^3 $ and $ h(x) = x_1^2 - x_2^4 $ from $ \mathbb{R}^2 $ to $ \mathbb{R} $, respectively, define a cusp and a double parabola, both of which fail our intuitive test of smoothness at the origin.
 
