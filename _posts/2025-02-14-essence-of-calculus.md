@@ -267,6 +267,82 @@ Why does the inverse function theorem make sense? Suppose we have a function \\(
 
 
 
+**Examples**
+
+To end, some important examples: if m=1, our function reduces to 
+
+$$ f: \mathbb{R}^n \rightarrow \mathbb{R}$$
+
+a very common case. Recall the total derivative is \\(m\times n\\) matrix, so in this case the Jacobian is the \\(1 \times n\\) matrix:
+
+$$
+
+Df(x)=
+\begin{bmatrix}
+\frac{\partial f}{\partial x_1}(x)& \frac{\partial f}{\partial x_2}(x) & \cdots & \frac{\partial f}{\partial x_n}(x)
+\end{bmatrix}
+= \nabla f(x)^T
+$$
+
+So the total derivative is just the transpose of the gradient. 
+
+Another interesting case is curve in \\(\mathbb{R}^m\\) parametrized by a single variable
+
+$$ f: \mathbb{R} \rightarrow \mathbb{R}^m$$
+
+This function is expressed by
+
+
+$$
+f(t) = \left( \begin{array}{c} f_1(t) \\ f_2(t) \\ \vdots \\ f_m(t) \end{array} \right).
+$$
+
+Its total derivative is
+
+$$
+Df(t)=
+\begin{pmatrix}
+\frac{_1}{dt} \\
+\frac{d f_2}{dt} \\
+\vdots \\
+\frac{d f_m}{dt}
+\end{pmatrix}
+$$
+
+Now a last useful example. We will often be expose to compostions of the form
+
+
+$$ f: \mathbb{R}^n \rightarrow \mathbb{R},\quad \gamma : \mathbb{R} \rightarrow \mathbb{R}^n, \quad f\circ\gamma : \mathbb{R}\to \mathbb{R} $$
+
+Using the chain rule of mappings
+
+$$
+D(g\circ f)(x) = Dg(f(x))Df(x)
+$$
+
+we get
+
+$$
+D(f\circ \gamma)(t) = Df(\gamma(t))D\gamma(t) = \nabla f(\gamma(t)) \cdot\begin{pmatrix}
+\gamma_1'(t) \\
+\gamma_2'(t) \\
+\vdots \\
+\gamma_m'(t)
+\end{pmatrix}
+$$
+
+
+comp of matrices is just matrix product.
+
+
+
+
+
+
+
+
+
+
 
 
 
