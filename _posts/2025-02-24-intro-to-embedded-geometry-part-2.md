@@ -45,7 +45,55 @@ $$
 
 In particular, at \\( t = 0 \\) this implies \\( Dh(x)[v] = 0 \\), that is, \\( v \in \ker Dh(x) \\). This confirms \\( T_x \mathcal{M} \subseteq \ker Dh(x) \\).  
 
-**Step 2.** To show that \\( T_x \mathcal{M} \\) contains a subspace of the same dimension as \\( \ker Dh(x) \\) (namely, of dimension \\( n = d - k \\)), we must construct smooth curves on \\( \mathcal{M} \\) that pass through \\( x \\) with various velocities. To do so, we call upon Theorem **3.12**. The latter provides us with a diffeomorphism \\( F': U \to V \\) (where \\( U \\) is now a possibly smaller neighborhood of \\( x \\) than the original domain of \\( h \\)). We use \\( F'^{-1} \\) to construct smooth curves on \\( \mathcal{M} \\) that pass through \\( x \\).
+**Step 2.** To show that \\( T_x \mathcal{M} \\) contains a subspace of the same dimension as \\( \ker Dh(x) \\) (namely, of dimension \\( n = d - k \\)), we must construct smooth curves on \\( \mathcal{M} \\) that pass through \\( x \\) with various velocities. To do so, we call upon Theorem from the previous post. The latter provides us with a diffeomorphism \\( F: U \to V \\) where \\( U\subseteq \mathcal{E}\\) is a subset of the \\(d\\) dimensional linear space, now a possibly smaller neighborhood of \\( x \\) than the original domain of \\( h \\) and \\(V\subseteq \\). We use \\( F^{-1} \\) to construct smooth curves on \\( \mathcal{M} \\) that pass through \\( x \\).
+
+
+
+Pick arbitrary \\( u \in \mathbb{R}^{d-k} \\) and let  
+
+$$
+\gamma(t) = F(x) + t \begin{bmatrix} u \\ 0 \end{bmatrix}.
+$$
+
+(Here, \\( 0 \\) denotes a zero vector of size \\( k \\).) Notice that \\( \gamma \\) remains in \\( E \cap V \\) for \\( t \\) close to zero, where \\( E \\) is the subspace of \\( \mathbb{R}^d \\) consisting of all vectors whose last \\( k \\) entries are zero. \\(F(x)\in \mathcal{M}\cap V\\) by def, but larger \\(t\\) values may perturb us out of the set.  Since \\( F^{-1}(E \cap V) = \mathcal{M} \cap U \\), it follows that  
+
+$$
+c(t) = F^{-1}(\gamma(t))
+$$  
+
+resides in \\( \mathcal{M} \\) for \\( t \\) close to zero. Moreover, \\( c(0) = x \\) and \\( c \\) is smooth since \\( F^{-1} \\) is smooth. It follows that \\( c \\) is indeed a smooth curve on \\( \mathcal{M} \\) passing through \\( x \\).  
+What is the velocity of this curve at \\( x \\)? Applying the chain rule to the equation above, we get  
+
+$$
+c'(t) = DF^{-1}(\gamma(t)) [\gamma'(t)].
+$$  
+
+In particular, at \\( t = 0 \\) we have  
+
+$$
+c'(0) = DF^{-1}(F(x)) \begin{bmatrix} u \\ 0 \end{bmatrix}.
+$$  
+
+Since \\( F \\) is a diffeomorphism, we know from (3.20) that \\( DF^{-1}(F(x)) \\) is an invertible linear map, equal to \\( (DF(x))^{-1} \\). The specific form of \\( c'(0) \\) is unimportant. What matters is that each \\( c'(0) \\) of the form above certainly belongs to \\( T_x\mathcal{M} \\) by the defintion from earlier. Now recall when an linear operator \\(A\\) is invertible(which is equivalent to injective + surjective) applying this to a set of linearly independent vectors \\(\{v_1,\dots, v_n\}\\) we get another set of linearly indepentdent vectors \\(\{Av_1,\dots, Av_n\}\\). 
+
+Since \\( DF^{-1}(F(x)) \\) is invertible and \\( u \in \mathbb{R}^{d-k} \\) is arbitrary, for example we can set it to be each of the \\(d-k\\) standardbasis vectors, this means that when applying this invertible operator we will get \\(d-k\\) linearly independent tangent vectors in \\( T_x\mathcal{M} \\), thus it must contain a subspace of dimension \\( d - k \\). But we know from the previous step that \\( T_x\mathcal{M} \\) is included in a subspace of dimension \\( d - k \\), namely, \\( \ker Dh(x) \\)(dimension is clear from rank-nullity thm). It follows that \\( T_x\mathcal{M} = \ker Dh(x) \\). Since this holds for all \\( x \in \mathcal{M} \\), the proof is complete.  
+\\( \square \\)
+
+
+
+**Example 1**
+The space \\(\{x\in \mathbb{R}^d| Ax=b\}\\) where \\(A\in \mathbb{R}^{k\times d}\\) is a rank \\(k\\) matrix and \\(b\in \mathbb{R}^k\\) is arbitrary, is a manifold of dimension \\(d-k\\) embedded in \\(\mathbb{R}^{d}\\). This is clear, using \\(h(x) = Ax-b\\) as a defining function, also computing the the differential of \\(h\\) we see
+
+\begin{align*}
+Dh(x)[v] &= \lim_{t \to 0} \frac{h(x + tv)-h(x)}{t} \\
+      &= \lim_{t \to 0} \frac{A(x+tv) -b -(Ax-b)}{t} \\
+      &= Av 
+\end{align*}
+
+Due to the requirement that the rank is \\(k\\) (full rank since \\(k < d\\)), then the differential also has this rank. 
+
+
+
 
 
 
